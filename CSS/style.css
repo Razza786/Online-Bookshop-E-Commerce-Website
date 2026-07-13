@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+}
+
+/* Book Layout */
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.book {
+    display: flex;
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.book img {
+    width: 120px;
+    margin-right: 15px;
+}
+
+/* Form Styling */
+input {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Mobile Design*/
+@media (max-width: 600px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .books {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book img {
+        width: 150px;
+        margin: 0 0 10px 0;
+    }
+
+    input,
+    button {
+        width: 90%;
+        font-size: 16px;
+    }
+}

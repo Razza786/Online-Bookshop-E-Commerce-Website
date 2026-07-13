@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+<!-- payment success message displayed-->
+<h2>Payment Successful</h2>
+
+<p id="message"></p>
+<!-- JavaScript part displays only last 4 digits of card no -->
+<script>
+let last4 = sessionStorage.getItem("last4");
+
+document.getElementById("message").innerText =
+    "Card used: **** **** **** " + last4;
+</script>
+
+</body>
+</html>
